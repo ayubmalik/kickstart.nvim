@@ -17,6 +17,10 @@ map('n', '<c-s>', ':update<cr>')
 map('v', '<', '<gv')
 map('v', '>', '>gv')
 
+-- move lines up and down
+map('n', '<a-j>', ':m .+1<cr>')
+map('n', '<a-k>', ':m .-2<cr>')
+
 -- Disable arrow keys 😅
 map('n', '<up>', '<nop>')
 map('n', '<down>', '<nop>')
@@ -30,3 +34,6 @@ map('', '<up>', '<nop>')
 map('', '<down>', '<nop>')
 map('', '<left>', '<nop>')
 map('', '<right>', '<nop>')
+
+-- navbuddy
+map('n', '<f12>', '<cmd>:lua require("nvim-navbuddy").open()<CR>')
