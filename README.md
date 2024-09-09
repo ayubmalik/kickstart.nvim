@@ -11,6 +11,10 @@ rm -rf ~/.cache/nvim
 
 ```
 
+## Plugins TODO
+autopairs
+gitsigns?
+
 ## Introduction
 
 A starting point for Neovim that is:
