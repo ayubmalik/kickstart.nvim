@@ -36,4 +36,4 @@ map('', '<left>', '<nop>')
 map('', '<right>', '<nop>')
 
 -- navbuddy
-map('n', '<F12>', '<cmd>:lua require("nvim-navbuddy").open()<CR>')
+--map('n', '<F12>', '<cmd>:lua require("nvim-navbuddy").open()<CR>')
