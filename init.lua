@@ -855,15 +855,15 @@ require('lazy').setup({
             },
           }),
 
-          -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-          cmp.setup.cmdline(':', {
-            mapping = cmp.mapping.preset.cmdline(),
-            sources = cmp.config.sources({
-              { name = 'path' },
-            }, {
-              { name = 'cmdline' },
-            }),
-          }),
+          -- -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+          -- cmp.setup.cmdline(':', {
+          --   mapping = cmp.mapping.preset.cmdline(),
+          --   sources = cmp.config.sources({
+          --     { name = 'path' },
+          --   }, {
+          --     { name = 'cmdline' },
+          --   }),
+          -- }),
 
           -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
           --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
