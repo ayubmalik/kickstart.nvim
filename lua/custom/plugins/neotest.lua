@@ -4,6 +4,7 @@ return {
     'nvim-neotest/nvim-nio',
     'fredrikaverpil/neotest-golang',
   },
+  lazy = true,
   opts = {
     -- Can be a list of adapters like what neotest expects,
     -- or a list of adapter names,
