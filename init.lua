@@ -166,6 +166,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+vim.keymap.set('n', '<leader>Q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -848,12 +849,12 @@ require('lazy').setup({
           end, { 'i', 's' }),
 
           -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
-          cmp.setup.cmdline({ '/', '?' }, {
-            mapping = cmp.mapping.preset.cmdline(),
-            sources = {
-              { name = 'buffer' },
-            },
-          }),
+          -- cmp.setup.cmdline({ '/', '?' }, {
+          --   mapping = cmp.mapping.preset.cmdline(),
+          --   sources = {
+          --     { name = 'buffer' },
+          --   },
+          -- }),
 
           -- -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
           -- cmp.setup.cmdline(':', {
