@@ -117,7 +117,18 @@ vim.opt.showmode = false
 vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
 end)
-
+vim.g.clipboard = {
+  name = 'xclip',
+  copy = {
+    ['+'] = 'xclip -i -selection clipboard',
+    ['*'] = 'xclip -i -selection clipboard',
+  },
+  paste = {
+    ['+'] = 'xclip -o -selection clipboard',
+    ['*'] = 'xclip -o -selection clipboard',
+  },
+  cache_enabled = false,
+}
 -- Enable break indent
 vim.opt.breakindent = true
 
