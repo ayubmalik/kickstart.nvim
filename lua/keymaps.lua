@@ -20,6 +20,8 @@ map('v', '>', '>gv')
 -- move lines up and down
 map('n', '<a-j>', ':m .+1<cr>')
 map('n', '<a-k>', ':m .-2<cr>')
+map('v', '<a-j>', ":m '>+1<cr>gv=gv")
+map('v', '<a-k>', ":m '<-2<cr>gv=gv")
 
 -- Disable arrow keys 😅
 map('n', '<up>', '<nop>')
