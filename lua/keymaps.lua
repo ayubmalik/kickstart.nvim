@@ -67,6 +67,7 @@ map('', '<down>', '<nop>')
 map('', '<left>', '<nop>')
 map('', '<right>', '<nop>')
 
--- navbuddy
---map('n', '<F12>', '<cmd>:lua require("nvim-navbuddy").open()<CR>')
+-- toggle relative line numbers
+map('n', '<F2>', ':set relativenumber!<cr>')
 map('n', '-', '<cmd>Oil<cr>')
+
