@@ -12,8 +12,7 @@ rm -rf ~/.cache/nvim
 ```
 
 ## Plugins TODO
-autopairs
-gitsigns?
+extras + custome
 
 ## Introduction
 
